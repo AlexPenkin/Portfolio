@@ -5,28 +5,24 @@ import {
 
 
 const initialState = {
-    counter: 0
-}
+    value: 0
+};
 
 const counter = (state = initialState, action) => {
     switch (action.type) {
         case INCREMENT:
             return {
-                counter: state.counter++,
+                value: state.value++,
                 ...state
-            }
-            break;
+            };
         case DECREMENT:
             return {
-                counter: state.counter--,
+                value: state.value--,
                 ...state
-            }
-            break;
-
+            };
         default:
             return state;
-            break;
     }
-}
+};
 
 export default counter;
