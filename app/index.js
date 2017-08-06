@@ -13,5 +13,5 @@ render(
         store={store}
         history={history}
     />,
-  document.getElementById('ro ot')
+  document.getElementById('root')
 );
